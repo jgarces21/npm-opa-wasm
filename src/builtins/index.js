@@ -7,6 +7,7 @@ const strings = require("./strings");
 const regex = require("./regex");
 const types = require("./types");
 const conversions = require("./conversions");
+const debuging = require("./debuging");
 
 module.exports = {
   ...numbers,
@@ -18,4 +19,5 @@ module.exports = {
   ...regex,
   ...types,
   ...conversions,
+  ...debuging,
 };
