@@ -75,7 +75,7 @@ function parseTokenConstraints(constraints) {
 // represents a structurally valid JWT. It supports JWTs using JWS compact
 // serialization.
 function builtinJWTDecode(jwt) {
-    var t = jose.JWT.decode(token, { complete: true });
+    var t = jose.JWT.decode(jwt, { complete: true });
     var hexSig = new Buffer(t.signature, 'base64').toString('hex');
     return [ t.header, t.payload, hexSig ];
 }
